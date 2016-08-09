@@ -1,0 +1,25 @@
+<div layout="row" layout-align="end center">
+  <md-input-container>
+    <label>Sort</label>
+    <md-select ng-model="sort" ng-change="getProductList()">
+      <md-option ng-repeat="type in sortList" ng-value="type.value">{{type.name}}</md-option>
+    </md-select>
+</div>
+<md-content flex class="sideNavContent" when-scrolled="load()">
+  <div layout="row" layout-wrap layout-align="center center">
+    <md-card ng-repeat="product in productList">
+      <md-card-content>
+          <div class="product-details" layout="row" layout-align="space-between ceter">
+            <div class="column">
+              <div class='md-title'>{{product.name}}</div>
+              <div class="md-body-1">{{product.cat}}</div>
+            </div>
+            <div class="md-body-2"><i class="fa fa-inr" aria-hidden="true"></i> {{product.price}}</div>
+          </div>
+          <img class="product-image" src={{product.img}} alt="">
+          <div>
+          <md-button class="md-primary buy-now" flex>Buy Now</md-button>
+      </md-card-content>
+    </md-card>
+  </div>
+</md-content>
