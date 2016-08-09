@@ -1,0 +1,37 @@
+.body{
+	font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+.container, div[ui-view], md-sidenav, md-content, md-sidenav .md-subheader{
+	background-color: #e8e8e8;
+}
+md-sidenav{
+  max-width: 280px;
+}
+md-list-item.md-no-proxy, md-list-item .md-no-style{
+  cursor: pointer;
+  padding-left: 30px;
+}
+md-list-item.active{
+  background-color: #fafafa;
+}
+md-list-item:hover, md-list-item .md-button:not([disabled]):hover{
+  background-color: #f1f1f1;
+}
+md-card{
+  padding: 0;
+  height: auto;
+}
+md-card .product-details{
+  padding: 10px;
+}
+md-card md-card-content{
+  padding: 0;
+}
+md-card img{
+  margin: auto;
+  display: block;
+}
+button.buy-now{
+  width: 100%;
+  margin: 0;
+}
